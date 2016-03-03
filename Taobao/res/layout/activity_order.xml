@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#f9f9f9" >
+
+        <TextView
+            android:id="@+id/orderBack"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="2dp"
+            android:drawableLeft="@drawable/tb_icon_actionbar_back"
+            android:gravity="center_vertical"
+            android:paddingLeft="7sp"
+            android:text="我的订单"
+            android:textColor="#404548"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/orderMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/tb_icon_actionbar_more" />
+
+        <ImageView
+            android:id="@+id/orderIv"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/orderMore"
+            android:background="#e0e0e0" />
+
+        <ImageView
+            android:id="@+id/orderSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/orderIv"
+            android:src="@drawable/abc_search" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c2c2c2" />
+
+    <ListView
+        android:id="@+id/orderLv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>
+
+</LinearLayout>

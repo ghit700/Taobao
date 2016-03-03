@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/fragmentMain"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10" >
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c1c4cd" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:background="#f9f9f9"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/guideHome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/guide_home_on"
+            android:gravity="center_horizontal"
+            android:text="首页"
+            android:textColor="@color/orange" />
+
+        <TextView
+            android:id="@+id/guideCar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/guide_cart_nm"
+            android:gravity="center_horizontal"
+            android:text="购物车"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/guideAccount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/guide_account_nm"
+            android:gravity="center_horizontal"
+            android:text="我的淘宝"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+</LinearLayout>

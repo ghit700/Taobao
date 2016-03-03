@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Taobao</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="name">
+        <item>item1</item>
+        <item>item2</item>
+        <item>item3</item>
+        <item>ite4</item>
+        <item>item5</item>
+        <item>item6</item>
+        <item>item7</item>
+        <item>item8</item>
+        <item>item9</item>
+        <item>item10</item>
+        <item>item11</item>
+        <item>item12</item>
+        <item>item13</item>
+        <item>item14</item>
+        <item>item15</item>
+        <item>item16</item>
+        <item>item17</item>
+    </string-array>
+
+</resources>

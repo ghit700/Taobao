@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee" >
+
+    <LinearLayout
+        android:id="@+id/LL5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#f9f9f9"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/userBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/tb_icon_actionbar_back"
+            android:gravity="center_vertical"
+            android:text="个人资料"
+            android:textColor="#444444"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/IV1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/LL5"
+        android:background="#b2b2b2" />
+
+    <ImageView
+        android:id="@+id/IV2"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@id/IV1"
+        android:background="#eeeeee" />
+
+    <RelativeLayout
+        android:id="@+id/userGet"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/IV2"
+        android:background="#ffffff" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="淘宝头像"
+            android:textColor="#3d4245"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/ivback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/tb_icon_actionbar_back2" />
+
+        <com.wu.taobao.view.CircleImageView
+            android:id="@+id/userImg"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/ivback"
+            android:scaleType="centerInside"
+            android:src="@drawable/empty_img" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/IV3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/userGet"
+        android:background="#e7e7e7" />
+
+    <RelativeLayout
+        android:id="@+id/userPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/IV3"
+        android:background="#ffffff" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="修改密码"
+            android:textColor="#3d4245"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/tb_icon_actionbar_back2" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/userPassword"
+        android:background="#e7e7e7" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ff3e00"
+        android:gravity="center"
+        android:text="退出当前账号"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+</RelativeLayout>

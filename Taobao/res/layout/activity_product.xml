@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" 
+            android:background="#ffffff">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp" >
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/pages"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp" >
+                </android.support.v4.view.ViewPager>
+
+                <LinearLayout
+                    android:id="@+id/ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/productName"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#dddddd" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:drawableTop="@drawable/fenxiang1"
+                    android:gravity="center_horizontal"
+                    android:text="分享" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/productPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ff5b11"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_open_wopc_auth_default"
+            android:src="@drawable/tb_icon_actionbar_back" />
+
+        <ImageView
+            android:id="@+id/more"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_open_wopc_auth_default"
+            android:src="@drawable/tb_icon_actionbar_more" />
+
+        <ImageView
+            android:id="@+id/cart"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/more"
+            android:background="@drawable/ic_open_wopc_auth_default"
+            android:src="@drawable/tb_icon_more_cart_56" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/wangwang"
+            android:gravity="center_horizontal"
+            android:text="客服" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/dianpu"
+            android:gravity="center_horizontal"
+            android:text="店铺" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/shoucang"
+            android:gravity="center_horizontal"
+            android:text="收藏" />
+
+        <TextView
+            android:id="@+id/joinCart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="#ff9100"
+            android:gravity="center"
+            android:text="加入购物车"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/buy"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="#ff5001"
+            android:gravity="center"
+            android:text="立即购买"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <!-- 隐藏 加入购物车 -->
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#55000000"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/Rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#ffffff" 
+            >
+
+            <ImageView
+                android:id="@+id/closeCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/input_delete" />
+
+            <ImageView
+                android:id="@+id/productImg"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/tupian_bg" />
+
+            <TextView
+                android:id="@+id/productPrice1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/productImg"
+                android:text="$76"
+                android:textColor="#ff5000"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/ll2"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@id/productImg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="购买数量"
+                    android:textColor="#a5a5a5"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/sub"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="50dp"
+                    android:background="@drawable/product_shape"
+                    android:gravity="center"
+                    android:text="－"
+                    android:textColor="#a5a5a5"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/count"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/productcount_shape"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="#a5a5a5"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/add"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/product_shape"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textColor="#a5a5a5"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/confirmBtn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/ll2"
+                android:background="#ff5000"
+                android:text="确定"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
